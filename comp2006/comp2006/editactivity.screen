@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" theme="clean">
+  <widgets xsi:type="model:Panel" id="1" width="800" height="600" measuredWidth="800" measuredHeight="600"/>
+  <widgets xsi:type="model:VScrollbar" id="2" x="783" y="1" height="598" measuredWidth="17" measuredHeight="598"/>
+  <widgets xsi:type="model:VLine" id="3" x="100" height="600" measuredWidth="6" measuredHeight="600"/>
+  <widgets xsi:type="model:Table" id="6" x="100" width="685" height="598" text="Activity,Current cost,Cost in 1h, Average Cost, Schedule, Estimated Cost&#xA;Shower 20min,%(color:green)£2.1{arrow-down}%,%(color:red)£2.8{arrow-up}%,£2.5,{add} [Edit]&#xA;Washing machine,%(color:red)£3.1{arrow-up}%,%(color:orange)£3.0{arrow-down}%,£2.8,{history} [Edit], £2.9&#xA;Increase temperature,%(color:green)£1.2/C{arrow-down}%,%(color:green)£1.1/C{arrow-down}%,£1.3/C,{add}{history} [Edit], £2.1 for 2C&#xA;" measuredWidth="685" measuredHeight="598" selection="">
+    <font bold="false"/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="8" x="582" y="24" text="+" measuredWidth="11" measuredHeight="25" link="activitycost.screen">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>
