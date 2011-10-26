@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" theme="clean">
   <widgets xsi:type="model:Panel" id="4" x="10" y="10" width="800" height="600" measuredWidth="800" measuredHeight="600" alpha="0"/>
-  <widgets xsi:type="model:TabbedPane" id="3" x="10" y="10" width="800" height="600" text="HOME,Consumption history{history},Tab Three" measuredWidth="800" measuredHeight="600" selection="0">
-    <items x="10" y="0" width="65" height="37" text="HOME"/>
-    <items x="75" y="0" width="182" height="37" text="Consumption history{history}"/>
-    <items x="257" y="0" width="88" height="37" text="Tab Three"/>
+  <widgets xsi:type="model:TabbedPane" id="3" x="10" y="10" width="800" height="600" text="HOME,Consumption History{history},Tab Three" measuredWidth="800" measuredHeight="600" selection="0">
+    <items x="10" y="0" width="67" height="34" text="HOME"/>
+    <items x="77" y="0" width="191" height="34" text="Consumption History{history}"/>
+    <items x="268" y="0" width="91" height="34" text="Tab Three"/>
     <font size="12"/>
   </widgets>
-  <widgets xsi:type="model:Rectangle" id="5" x="657" y="10" height="39" text="December 21th 2012 15:00" measuredWidth="153" measuredHeight="39">
+  <widgets xsi:type="model:Rectangle" id="5" x="617" y="10" height="36" text="December 21th 2012 15:00" measuredWidth="193" measuredHeight="36">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Table" id="6" x="88" y="96" width="623" height="169" text="Time,Energy Consumption,Cost ,Average,Green energy&#xA;Today,5.80kWh ,£6.2{arrow-up},£5.8,59%&#xA;Current,0.7kW/h,£0.7/h{arrow-down},£0.8,38%&#xA;Future,Current consumption,£0.8/h in 2h,£0.8,28%&#xA;" measuredWidth="623" measuredHeight="169" alternative="#eeeeee">
+  <widgets xsi:type="model:Table" id="6" x="88" y="96" width="649" height="169" text="Time,Energy Consumption,Cost ,Average,Green energy&#xA;Today,5.80kWh ,£6.2{arrow-up},£5.8,59%&#xA;Current,0.7kW/h,£0.7/h{arrow-down},£0.8,38%&#xA;Future,Current consumption,£0.8/h in 2h,£0.8,28%&#xA;" measuredWidth="649" measuredHeight="169" alternative="#eeeeee">
     <font size="16"/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="7" x="97" y="14" text="Consumption History{history}" measuredWidth="174" measuredHeight="27" link="history.screen">
+    <font size="12"/>
   </widgets>
   <hRuler/>
   <vRuler/>

@@ -1,35 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" theme="clean">
   <widgets xsi:type="model:Panel" id="2" x="10" y="10" width="800" height="600" measuredWidth="800" measuredHeight="600"/>
-  <widgets xsi:type="model:TabbedPane" id="12" x="10" y="10" width="800" height="600" text="HOME,Consumption history{history},Tab Three" measuredWidth="800" measuredHeight="600" selection="0">
-    <items x="10" y="0" width="65" height="37" text="HOME"/>
-    <items x="75" y="0" width="182" height="37" text="Consumption history{history}"/>
-    <items x="257" y="0" width="88" height="37" text="Tab Three"/>
+  <widgets xsi:type="model:TabbedPane" id="12" x="10" y="10" width="800" height="600" text="HOME,Consumption history{history},Tab Three" measuredWidth="800" measuredHeight="600" selection="1">
+    <items x="10" y="0" width="67" height="34" text="HOME"/>
+    <items x="77" y="0" width="189" height="34" text="Consumption history{history}"/>
+    <items x="266" y="0" width="91" height="34" text="Tab Three"/>
     <font size="12"/>
   </widgets>
   <widgets xsi:type="model:Image" id="3" x="20" y="127" measuredWidth="640" measuredHeight="366" src="energycost.png"/>
-  <widgets xsi:type="model:Button" id="4" x="659" y="231" width="132" text="Heating" measuredWidth="132" measuredHeight="37" icon="checked (large)" style="pointleft">
+  <widgets xsi:type="model:Group" id="14" x="659" y="119" width="151" height="374" text="Show in graph" measuredWidth="151" measuredHeight="374">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="4" x="659" y="189" width="132" text="Heating" measuredWidth="132" measuredHeight="37" background="#990000" icon="checked (large)" style="pointleft">
     <font size="14"/>
   </widgets>
-  <widgets xsi:type="model:Button" id="5" x="659" y="270" text="Hot Water" measuredWidth="147" measuredHeight="37" icon="checked (large)" style="pointleft">
+  <widgets xsi:type="model:Button" id="5" x="659" y="242" text="Hot Water" measuredWidth="149" measuredHeight="37" background="#38761d" icon="checked (large)" style="pointleft">
     <font size="14"/>
   </widgets>
-  <widgets xsi:type="model:Button" id="6" x="659" y="309" width="118" text="Fridge" measuredWidth="118" measuredHeight="37" icon="checked (large)" style="pointleft">
+  <widgets xsi:type="model:Button" id="6" x="659" y="295" width="118" text="Fridge" measuredWidth="118" measuredHeight="37" background="#674ea7" icon="checked (large)" style="pointleft">
     <font size="14"/>
   </widgets>
-  <widgets xsi:type="model:Button" id="7" x="659" y="348" width="147" text="Lightning" measuredWidth="147" measuredHeight="37" icon="checked (large)" style="pointleft">
+  <widgets xsi:type="model:Button" id="7" x="659" y="347" width="147" text="Lightning" measuredWidth="147" measuredHeight="37" background="#3d85c6" icon="checked (large)" style="pointleft">
     <font size="14"/>
   </widgets>
-  <widgets xsi:type="model:Button" id="8" x="659" y="387" width="136" text="Cooking" measuredWidth="136" measuredHeight="37" icon="checked (large)" style="pointleft">
+  <widgets xsi:type="model:Button" id="8" x="659" y="400" text="Cooking" measuredWidth="132" measuredHeight="37" background="#b45f06" icon="checked (large)" style="pointleft">
     <font size="14"/>
   </widgets>
-  <widgets xsi:type="model:Button" id="9" x="659" y="426" width="104" text="Misc" measuredWidth="104" measuredHeight="37" icon="checked (large)" style="pointleft">
+  <widgets xsi:type="model:Button" id="9" x="659" y="453" width="104" text="Misc" measuredWidth="104" measuredHeight="37" background="#a2c4c9" icon="checked (large)" style="pointleft">
     <font size="14"/>
   </widgets>
-  <widgets xsi:type="model:Button" id="10" x="659" y="192" width="107" text="Price" measuredWidth="107" measuredHeight="37" icon="checked (large)" style="pointleft">
+  <widgets xsi:type="model:Button" id="10" x="659" y="137" width="107" text="Price" measuredWidth="107" measuredHeight="37" background="#ff0000" icon="checked (large)" style="pointleft">
     <font size="14"/>
   </widgets>
-  <widgets xsi:type="model:Label" id="11" x="696" y="170" text="Show in graph" measuredWidth="81" measuredHeight="23">
+  <widgets xsi:type="model:Link" id="13" x="30" y="14" text="HOME" measuredWidth="50" measuredHeight="27" link="home.screen">
+    <font size="12"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="18" x="20" y="93" text="Consumption" measuredWidth="110" measuredHeight="27">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="19" x="144" y="93" text="Consumption cost" measuredWidth="142" measuredHeight="27" state="selected">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Image" id="25" x="20" y="502" width="637" height="84" measuredWidth="637" measuredHeight="84" src="smallhistorypng.png"/>
+  <widgets xsi:type="model:HScrollbar" id="28" x="20" y="585" width="637" measuredWidth="637" measuredHeight="17" value="100"/>
+  <widgets xsi:type="model:Panel" id="29" x="496" y="502" width="161" height="84" measuredWidth="161" measuredHeight="84" background="#3d85c6" alpha="128" border="solid-rounded"/>
+  <widgets xsi:type="model:Label" id="31" x="501" y="508" text="←\n←\n←" measuredWidth="20" measuredHeight="74">
+    <font size="13" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:VLine" id="32" x="517" y="503" height="82" measuredWidth="6" measuredHeight="82"/>
+  <widgets xsi:type="model:Label" id="33" x="638" y="509" text="→\n→\n→" measuredWidth="20" measuredHeight="74">
+    <font size="13" bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:VLine" id="34" x="630" y="504" height="82" measuredWidth="6" measuredHeight="82"/>
+  <widgets xsi:type="model:Link" id="35" x="30" y="94" text="Consumption" measuredWidth="93" measuredHeight="25" link="consumption.screen">
     <font/>
   </widgets>
   <hRuler/>
