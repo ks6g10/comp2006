@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" theme="clean">
+  <widgets xsi:type="model:Panel" id="2" x="10" y="10" width="800" height="600" measuredWidth="800" measuredHeight="600"/>
+  <widgets xsi:type="model:TabbedPane" id="12" x="10" y="10" width="800" height="600" text="HOME,Consumption history{history},Tab Three" measuredWidth="800" measuredHeight="600" selection="0">
+    <items x="10" y="0" width="65" height="37" text="HOME"/>
+    <items x="75" y="0" width="182" height="37" text="Consumption history{history}"/>
+    <items x="257" y="0" width="88" height="37" text="Tab Three"/>
+    <font size="12"/>
+  </widgets>
+  <widgets xsi:type="model:Image" id="3" x="20" y="127" measuredWidth="640" measuredHeight="366" src="energycost.png"/>
+  <widgets xsi:type="model:Button" id="4" x="659" y="231" width="132" text="Heating" measuredWidth="132" measuredHeight="37" icon="checked (large)" style="pointleft">
+    <font size="14"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="5" x="659" y="270" text="Hot Water" measuredWidth="147" measuredHeight="37" icon="checked (large)" style="pointleft">
+    <font size="14"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="6" x="659" y="309" width="118" text="Fridge" measuredWidth="118" measuredHeight="37" icon="checked (large)" style="pointleft">
+    <font size="14"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="7" x="659" y="348" width="147" text="Lightning" measuredWidth="147" measuredHeight="37" icon="checked (large)" style="pointleft">
+    <font size="14"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="8" x="659" y="387" width="136" text="Cooking" measuredWidth="136" measuredHeight="37" icon="checked (large)" style="pointleft">
+    <font size="14"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="9" x="659" y="426" width="104" text="Misc" measuredWidth="104" measuredHeight="37" icon="checked (large)" style="pointleft">
+    <font size="14"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="10" x="659" y="192" width="107" text="Price" measuredWidth="107" measuredHeight="37" icon="checked (large)" style="pointleft">
+    <font size="14"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="11" x="696" y="170" text="Show in graph" measuredWidth="81" measuredHeight="23">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>
