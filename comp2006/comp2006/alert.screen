@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" theme="clean">
+  <widgets xsi:type="model:Panel" id="7" x="10" y="10" width="800" height="600" measuredWidth="800" measuredHeight="600" alpha="0"/>
+  <widgets xsi:type="model:TabbedPane" id="8" x="10" y="10" width="800" height="600" text="HOME,Consumption History{history},Price and Energy Prediction,Alert{bell}" measuredWidth="800" measuredHeight="600" selection="3" alpha="0">
+    <items x="10" y="0" width="65" height="37" text="HOME"/>
+    <items x="75" y="0" width="184" height="37" text="Consumption History{history}"/>
+    <items x="259" y="0" width="210" height="37" text="Price and Energy Prediction"/>
+    <items x="469" y="0" width="69" height="37" text="Alert{bell}"/>
+    <font size="12"/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="9" x="30" y="15" text="HOME" measuredWidth="48" measuredHeight="29" link="home.screen">
+    <font size="12"/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="10" x="489" y="15" text="Alert{bell}" measuredWidth="52" measuredHeight="29">
+    <font size="12"/>
+  </widgets>
+  <widgets xsi:type="model:Link" id="11" x="95" y="15" text="Consumption History{history}" measuredWidth="167" measuredHeight="29">
+    <font size="12"/>
+  </widgets>
+  <widgets xsi:type="model:Table" id="12" x="10" y="100" width="800" height="245" text="Name,By Email,By Text, Enable remote correction, Recive notifications, Settings&#xA;Peter,[x],[],[x],[x],                                &#xA;Cristina,[x],[x],[],[x]&#xA;Henri,[],[x],[],[]&#xA;[Add user]&#xA;[Add user]&#xA;[Add user]" measuredWidth="800" measuredHeight="245" selection="" verticalScrollbar="true" alternative="#eeeeee">
+    <font size="14"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="20" x="13" y="52" text="Notify unusual activity" measuredWidth="261" measuredHeight="48" foreground="#38761d" icon="checked (xlarge)">
+    <font size="16"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="22" x="648" y="136" text="Edit" measuredWidth="46" measuredHeight="30">
+    <font size="11"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="23" x="708" y="136" text="Remove" measuredWidth="74" measuredHeight="30">
+    <font size="11"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="24" x="648" y="170" text="Edit" measuredWidth="46" measuredHeight="30">
+    <font size="11"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="25" x="708" y="170" text="Remove" measuredWidth="74" measuredHeight="30">
+    <font size="11"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="26" x="648" y="204" text="Edit" measuredWidth="46" measuredHeight="30">
+    <font size="11"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="27" x="708" y="204" text="Remove" measuredWidth="74" measuredHeight="30">
+    <font size="11"/>
+  </widgets>
+  <widgets xsi:type="model:List" id="29" x="11" y="433" width="552" height="173" text="Correction 07:32 DATE: Hot water running terminated. Location: Kitchen by Cristina via text.&#xA;|Notification 06:00 DATE: Hot water running. Location: Kitchen, notification sent to Cristina via text.&#xA;Correction 07:32 DATE: Hot water running dissmissed. Location: Kitchen by Cristina via text.&#xA;Notification 06:00 DATE: Hot water running. Location: Kitchen, notification sent to Cristina via text.&#xA;Notification 13:37 DATE: Arbitrary notification. Loaction Arbitrary, notification sent to Arbitrary" measuredWidth="552" measuredHeight="173" verticalScrollbar="true">
+    <font/>
+    <items x="0" y="2" width="535" height="21" text="Correction 07:32 DATE: Hot water running terminated. Location: Kitchen by Cristina via text."/>
+    <items x="0" y="23" width="535" height="21" text="|Notification 06:00 DATE: Hot water running. Location: Kitchen, notification sent to Cristina via text."/>
+    <items x="0" y="44" width="535" height="21" text="Correction 07:32 DATE: Hot water running dissmissed. Location: Kitchen by Cristina via text."/>
+    <items x="0" y="65" width="535" height="21" text="Notification 06:00 DATE: Hot water running. Location: Kitchen, notification sent to Cristina via text."/>
+    <items x="0" y="86" width="535" height="21" text="Notification 13:37 DATE: Arbitrary notification. Loaction Arbitrary, notification sent to Arbitrary"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="30" x="17" y="391" text="Notification Log" measuredWidth="187" measuredHeight="38" foreground="#b45f06" icon="warning (large)">
+    <font size="16"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="31" x="568" y="433" text="View Log" measuredWidth="104" measuredHeight="40" link="consumption.screen">
+    <font size="16"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="32" x="208" y="391" text="Current activity:%(color:darkgreen)Normal%" measuredWidth="252" measuredHeight="38" icon="thumbs-up (large)">
+    <font size="16"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="33" x="568" y="499" text="Clear Log" measuredWidth="107" measuredHeight="40">
+    <font size="16"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="34" x="568" y="566" text="Remove Log entry" measuredWidth="188" measuredHeight="40">
+    <font size="16"/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="35" x="279" y="56" text="Disable notifications" measuredWidth="208" measuredHeight="40">
+    <font size="16"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

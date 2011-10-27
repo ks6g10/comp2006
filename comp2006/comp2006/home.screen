@@ -2,19 +2,24 @@
 <model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" theme="clean">
   <widgets xsi:type="model:Panel" id="4" x="10" y="10" width="800" height="600" measuredWidth="800" measuredHeight="600" alpha="0"/>
   <widgets xsi:type="model:TabbedPane" id="3" x="10" y="10" width="800" height="600" text="HOME,Consumption History{history},Tab Three" measuredWidth="800" measuredHeight="600" selection="0">
-    <items x="10" y="0" width="67" height="34" text="HOME"/>
-    <items x="77" y="0" width="191" height="34" text="Consumption History{history}"/>
-    <items x="268" y="0" width="91" height="34" text="Tab Three"/>
+    <items x="10" y="0" width="65" height="37" text="HOME"/>
+    <items x="75" y="0" width="184" height="37" text="Consumption History{history}"/>
+    <items x="259" y="0" width="88" height="37" text="Tab Three"/>
     <font size="12"/>
   </widgets>
-  <widgets xsi:type="model:Rectangle" id="5" x="617" y="10" height="36" text="December 21th 2012 15:00" measuredWidth="193" measuredHeight="36">
+  <widgets xsi:type="model:Rectangle" id="5" x="617" y="10" height="36" text="December 21th 2012 15:00" measuredWidth="153" measuredHeight="36">
     <font/>
   </widgets>
   <widgets xsi:type="model:Table" id="6" x="88" y="96" width="649" height="169" text="Time,Energy Consumption,Cost ,Average,Green energy&#xA;Today,5.80kWh ,£6.2{arrow-up},£5.8,59%&#xA;Current,0.7kW/h,£0.7/h{arrow-down},£0.8,38%&#xA;Future,Current consumption,£0.8/h in 2h,£0.8,28%&#xA;" measuredWidth="649" measuredHeight="169" alternative="#eeeeee">
     <font size="16"/>
   </widgets>
-  <widgets xsi:type="model:Link" id="7" x="97" y="14" text="Consumption History{history}" measuredWidth="174" measuredHeight="27" link="history.screen">
+  <widgets xsi:type="model:Link" id="7" x="95" y="15" text="Consumption History{history}" measuredWidth="167" measuredHeight="29" link="history.screen">
     <font size="12"/>
+  </widgets>
+  <widgets xsi:type="model:Image" id="9" x="12" y="312" width="797" height="295" measuredWidth="797" measuredHeight="295" src="home_image.png"/>
+  <widgets xsi:type="model:Panel" id="10" x="408" y="312" width="401" height="265" measuredWidth="401" measuredHeight="265" background="#6aa84f" alpha="64" border="none"/>
+  <widgets xsi:type="model:Label" id="11" x="414" y="288" text="Future Energy Cost" measuredWidth="105" measuredHeight="23">
+    <font/>
   </widgets>
   <hRuler/>
   <vRuler/>
