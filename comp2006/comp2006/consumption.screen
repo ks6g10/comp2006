@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" theme="clean">
-  <widgets xsi:type="model:Panel" id="1" x="10" y="10" width="800" height="600" measuredWidth="800" measuredHeight="600" alpha="0"/>
-  <widgets xsi:type="model:TabbedPane" id="2" x="10" y="10" width="800" height="600" text="HOME,Consumption history{history},Alert{bell}" measuredWidth="800" measuredHeight="600" selection="1" alpha="0">
-    <items x="10" y="0" width="65" height="37" text="HOME"/>
-    <items x="75" y="0" width="182" height="37" text="Consumption history{history}"/>
-    <items x="257" y="0" width="69" height="37" text="Alert{bell}"/>
-    <font size="12"/>
-  </widgets>
-  <widgets xsi:type="model:Link" id="12" x="30" y="14" text="HOME" measuredWidth="48" measuredHeight="29" link="home.screen">
-    <font size="12"/>
-  </widgets>
-  <widgets xsi:type="model:Link" id="30" x="277" y="15" text="Alert{bell}" measuredWidth="52" measuredHeight="29">
-    <font size="12"/>
-  </widgets>
   <widgets xsi:type="model:Image" id="15" x="10" y="492" width="800" height="102" measuredWidth="800" measuredHeight="102" src="smallhistorypng.png"/>
+  <widgets xsi:type="model:WidgetGroup" id="47" x="10" y="10" measuredWidth="800" measuredHeight="600" name="asd">
+    <widgets xsi:type="model:Panel" id="48" width="800" height="600" measuredWidth="800" measuredHeight="600" alpha="0"/>
+    <widgets xsi:type="model:TabbedPane" id="49" width="800" height="600" text="HOME,Consumption history{history},Cost History{currency-pound}, Prediction, Nofitications and Alerts" measuredWidth="800" measuredHeight="600" selection="1" alpha="0">
+      <items link="home.screen" x="10" y="0" width="67" height="34" text="HOME"/>
+      <items link="" x="77" y="0" width="189" height="34" text="Consumption history{history}"/>
+      <items link="cost.screen" x="266" y="0" width="127" height="34" text="Cost History{currency-pound}"/>
+      <items link="prediction.screen" x="393" y="0" width="96" height="34" text="Prediction"/>
+      <items link="alert.screen" x="489" y="0" width="194" height="34" text="Nofitications and Alerts"/>
+      <font size="12"/>
+    </widgets>
+  </widgets>
   <widgets xsi:type="model:Image" id="27" x="12" y="127" width="648" measuredWidth="648" measuredHeight="366" src="consumption_image.png"/>
   <widgets xsi:type="model:Group" id="4" x="659" y="125" width="151" height="368" text="Show in graph" measuredWidth="151" measuredHeight="368">
     <font/>
@@ -21,7 +19,7 @@
   <widgets xsi:type="model:Button" id="5" x="659" y="193" width="132" text="Heating" measuredWidth="132" measuredHeight="37" background="#990000" icon="checked (large)" style="pointleft">
     <font size="14"/>
   </widgets>
-  <widgets xsi:type="model:Button" id="6" x="659" y="245" text="Hot Water" measuredWidth="147" measuredHeight="37" background="#38761d" icon="checked (large)" style="pointleft">
+  <widgets xsi:type="model:Button" id="6" x="659" y="245" text="Hot Water" measuredWidth="149" measuredHeight="37" background="#38761d" icon="checked (large)" style="pointleft">
     <font size="14"/>
   </widgets>
   <widgets xsi:type="model:Button" id="7" x="659" y="297" width="118" text="Fridge" measuredWidth="118" measuredHeight="37" background="#674ea7" icon="checked (large)" style="pointleft">
@@ -30,35 +28,26 @@
   <widgets xsi:type="model:Button" id="8" x="659" y="349" width="147" text="Lightning" measuredWidth="147" measuredHeight="37" background="#3d85c6" icon="checked (large)" style="pointleft">
     <font size="14"/>
   </widgets>
-  <widgets xsi:type="model:Button" id="9" x="659" y="401" text="Cooking" measuredWidth="131" measuredHeight="37" background="#b45f06" icon="checked (large)" style="pointleft">
+  <widgets xsi:type="model:Button" id="9" x="659" y="401" text="Cooking" measuredWidth="132" measuredHeight="37" background="#b45f06" icon="checked (large)" style="pointleft">
     <font size="14"/>
   </widgets>
   <widgets xsi:type="model:Button" id="10" x="659" y="453" width="104" text="Misc" measuredWidth="104" measuredHeight="37" background="#8ea5cb" icon="checked (large)" style="pointleft">
     <font size="14"/>
   </widgets>
-  <widgets xsi:type="model:Button" id="11" x="659" y="141" width="107" text="Price" measuredWidth="107" measuredHeight="37" state="disabled" background="#cccccc" icon="checked (large)" style="pointleft">
+  <widgets xsi:type="model:Button" id="11" x="659" y="141" width="107" text="Total" measuredWidth="107" measuredHeight="37" background="#ff0000" icon="unchecked (large)" style="pointleft">
     <font size="14"/>
-  </widgets>
-  <widgets xsi:type="model:Button" id="13" x="20" y="93" text="View Energy Consumption" measuredWidth="160" measuredHeight="25" state="selected">
-    <font/>
-  </widgets>
-  <widgets xsi:type="model:Button" id="14" x="20" y="63" text="View Consumption cost" measuredWidth="146" measuredHeight="25">
-    <font/>
   </widgets>
   <widgets xsi:type="model:HScrollbar" id="16" x="10" y="593" width="800" measuredWidth="800" measuredHeight="17" value="100"/>
   <widgets xsi:type="model:Panel" id="17" x="617" y="492" width="192" height="102" measuredWidth="192" measuredHeight="102" background="#3d85c6" alpha="128" border="solid-rounded"/>
-  <widgets xsi:type="model:Label" id="18" x="624" y="493" text="•\n•\n•" measuredWidth="14" measuredHeight="98">
+  <widgets xsi:type="model:Label" id="18" x="624" y="493" text="•\n•\n•" measuredWidth="13" measuredHeight="83">
     <font size="16" bold="true"/>
   </widgets>
   <widgets xsi:type="model:VLine" id="19" x="637" y="492" height="102" measuredWidth="6" measuredHeight="102"/>
-  <widgets xsi:type="model:Label" id="20" x="791" y="494" text="•\n•\n•" measuredWidth="14" measuredHeight="98">
+  <widgets xsi:type="model:Label" id="20" x="791" y="494" text="•\n•\n•" measuredWidth="13" measuredHeight="83">
     <font size="16" bold="true"/>
   </widgets>
   <widgets xsi:type="model:VLine" id="21" x="782" y="492" height="102" measuredWidth="6" measuredHeight="102"/>
-  <widgets xsi:type="model:Link" id="23" x="30" y="64" text="View Consumption cost" measuredWidth="129" measuredHeight="23" link="history.screen">
-    <font/>
-  </widgets>
-  <widgets xsi:type="model:Button" id="32" x="189" y="93" text="Hide Notifications" measuredWidth="116" measuredHeight="25">
+  <widgets xsi:type="model:Button" id="32" x="632" y="47" text="Hide Notifications" measuredWidth="172" measuredHeight="29" icon="circled-mul (medium)">
     <font/>
   </widgets>
   <widgets xsi:type="model:Circle" id="34" x="297" y="217" width="25" height="27" measuredWidth="25" measuredHeight="27" background="#ff9900" alpha="64" foreground="#ff9900">
@@ -67,17 +56,50 @@
   <widgets xsi:type="model:Circle" id="35" x="344" y="292" width="25" height="27" measuredWidth="25" measuredHeight="27" background="#6aa84f" alpha="64" foreground="#80ff00">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Tooltip" id="36" x="360" y="253" text="Hot water correction" measuredWidth="119" measuredHeight="40">
+  <widgets xsi:type="model:Tooltip" id="36" x="360" y="253" text="Hot water correction" measuredWidth="150" measuredHeight="42">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Tooltip" id="37" x="179" y="178" text="Hot water notification" measuredWidth="126" measuredHeight="40" position="bottomRight">
+  <widgets xsi:type="model:Tooltip" id="37" x="144" y="177" text="Hot water notification" measuredWidth="159" measuredHeight="42" position="bottomRight">
     <font/>
   </widgets>
-  <widgets xsi:type="model:Button" id="38" x="563" y="48" width="247" text="Increase  Timeframe" measuredWidth="247" measuredHeight="40" icon="zoom-in (large)">
-    <font size="16"/>
+  <widgets xsi:type="model:WidgetGroup" id="50" x="529" y="71" measuredWidth="276" measuredHeight="56">
+    <widgets xsi:type="model:Group" id="51" width="276" height="56" text="View Consumption by" measuredWidth="276" measuredHeight="56">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Button" id="52" x="96" y="18" text="Gas" measuredWidth="51" measuredHeight="32" state="selected">
+      <font size="14"/>
+    </widgets>
+    <widgets xsi:type="model:Button" id="53" x="161" y="18" text="Electricity" measuredWidth="107" measuredHeight="32" state="selected">
+      <font size="14"/>
+    </widgets>
+    <widgets xsi:type="model:Button" id="54" x="10" y="18" text="Water" measuredWidth="72" measuredHeight="32">
+      <font size="14"/>
+    </widgets>
   </widgets>
-  <widgets xsi:type="model:Button" id="39" x="563" y="86" text="Decrease Timeframe" measuredWidth="247" measuredHeight="40" icon="zoom-out (large)">
-    <font size="16"/>
+  <widgets xsi:type="model:WidgetGroup" id="57" x="10" y="44" measuredWidth="234" measuredHeight="84">
+    <widgets xsi:type="model:Group" id="56" width="234" height="84" text="Time frame" measuredWidth="234" measuredHeight="84">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Combo" id="55" x="89" y="8" width="145" text="Daily" measuredWidth="145" measuredHeight="24">
+      <font size="10"/>
+    </widgets>
+    <widgets xsi:type="model:Combo" id="58" x="89" y="34" width="145" text="00:00 Today" measuredWidth="145" measuredHeight="24">
+      <font size="10"/>
+    </widgets>
+    <widgets xsi:type="model:Combo" id="59" x="89" y="60" width="145" text="Now" measuredWidth="145" measuredHeight="24">
+      <font size="10"/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="60" x="5" y="10" text="Interval:\nFrom:\nUp to:" measuredWidth="76" measuredHeight="74">
+      <font size="14"/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="64" x="272" y="44" measuredWidth="177" measuredHeight="86">
+    <widgets xsi:type="model:Group" id="62" width="177" height="84" text="Point Consumption" measuredWidth="177" measuredHeight="84">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="63" x="5" y="12" text="%(color:orange)Point 1: 0.3kWh%\n%(color:darkgreen)Point 2: 0.2kWh%\nSum:0.8kWh" measuredWidth="140" measuredHeight="74">
+      <font size="14"/>
+    </widgets>
   </widgets>
   <hRuler/>
   <vRuler/>

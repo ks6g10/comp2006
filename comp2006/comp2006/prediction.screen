@@ -1,43 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
-  <widgets xsi:type="model:Panel" id="1" x="10" y="10" width="800" height="600" measuredWidth="800" measuredHeight="600" alpha="0"/>
-  <widgets xsi:type="model:TabbedPane" id="2" x="10" y="10" width="800" height="600" text="HOME,Consumption History{history},Price and Energy Prediction,Alert{bell}" measuredWidth="800" measuredHeight="600" selection="2" alpha="0">
-    <items x="10" y="0" width="65" height="37" text="HOME"/>
-    <items x="75" y="0" width="184" height="37" text="Consumption History{history}"/>
-    <items x="259" y="0" width="210" height="37" text="Price and Energy Prediction"/>
-    <items x="469" y="0" width="69" height="37" text="Alert{bell}"/>
-    <font size="12"/>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" theme="clean">
+  <widgets xsi:type="model:WidgetGroup" id="18" x="10" y="10" measuredWidth="800" measuredHeight="600" name="asd">
+    <widgets xsi:type="model:Panel" id="19" width="800" height="600" measuredWidth="800" measuredHeight="600"/>
+    <widgets xsi:type="model:TabbedPane" id="20" width="800" height="600" text="HOME,Consumption history{history},Cost History{currency-pound}, Prediction, Nofitications and Alerts" measuredWidth="800" measuredHeight="600" selection="3" alpha="0">
+      <items link="home.screen" x="10" y="0" width="67" height="34" text="HOME"/>
+      <items link="consumption.screen" x="77" y="0" width="189" height="34" text="Consumption history{history}"/>
+      <items link="cost.screen" x="266" y="0" width="127" height="34" text="Cost History{currency-pound}"/>
+      <items link="" x="393" y="0" width="96" height="34" text="Prediction"/>
+      <items link="alert.screen" x="489" y="0" width="194" height="34" text="Nofitications and Alerts"/>
+      <font size="12"/>
+    </widgets>
   </widgets>
-  <widgets xsi:type="model:Link" id="3" x="30" y="15" text="HOME" measuredWidth="48" measuredHeight="29" link="home.screen">
-    <font size="12"/>
-  </widgets>
-  <widgets xsi:type="model:Link" id="4" x="489" y="15" text="Alert{bell}" measuredWidth="52" measuredHeight="29" link="alert.screen">
-    <font size="12"/>
-  </widgets>
-  <widgets xsi:type="model:Link" id="5" x="95" y="15" text="Consumption History{history}" measuredWidth="167" measuredHeight="29">
-    <font size="12"/>
-  </widgets>
-  <widgets xsi:type="model:Image" id="9" x="13" y="350" width="452" height="256" measuredWidth="452" measuredHeight="256" src="prediction_image.png"/>
-  <widgets xsi:type="model:Button" id="11" x="20" y="93" text="View Energy Consumption" measuredWidth="160" measuredHeight="25" state="selected">
-    <font/>
-  </widgets>
-  <widgets xsi:type="model:Button" id="12" x="20" y="63" text="View Consumption cost" measuredWidth="146" measuredHeight="25">
-    <font/>
-  </widgets>
-  <widgets xsi:type="model:Link" id="13" x="30" y="64" text="View Consumption cost" measuredWidth="129" measuredHeight="23" link="history.screen">
-    <font/>
-  </widgets>
-  <widgets xsi:type="model:Label" id="14" x="462" y="64" text="Predicted Green energy used:77% " measuredWidth="355" measuredHeight="38" foreground="#38761d" icon="thumbs-up (large)">
+  <widgets xsi:type="model:Image" id="9" x="11" y="370" width="393" height="238" measuredWidth="393" measuredHeight="238" src="prediction_image.png"/>
+  <widgets xsi:type="model:Label" id="14" x="24" y="64" text="Predicted Green energy usage:77% " measuredWidth="382" measuredHeight="33" foreground="#38761d" icon="thumbs-up (large)">
     <font size="16"/>
   </widgets>
-  <widgets xsi:type="model:Label" id="15" x="429" y="248" text="Predicted Energy Consumption: 5.8kWh" measuredWidth="371" measuredHeight="38">
+  <widgets xsi:type="model:Label" id="15" x="24" y="112" text="Predicted Energy Consumption next 12h: 5.8kWh" measuredWidth="479" measuredHeight="33">
     <font size="16"/>
   </widgets>
-  <widgets xsi:type="model:Label" id="16" x="431" y="352" measuredWidth="38" measuredHeight="32" icon="full-screen (large)">
-    <font/>
-  </widgets>
-  <widgets xsi:type="model:Label" id="17" x="464" y="112" text="Prediction Reliability:99%" measuredWidth="270" measuredHeight="38" foreground="#6aa84f" icon="thumbs-up (large)">
+  <widgets xsi:type="model:Label" id="17" x="432" y="64" text="Prediction Reliability:99%" measuredWidth="287" measuredHeight="33" foreground="#6aa84f" icon="thumbs-up (large)">
     <font size="16"/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="22" x="24" y="160" text="Predicted Energy Cost next 12h : £5.8" measuredWidth="368" measuredHeight="33">
+    <font size="16"/>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="23" x="14" y="312" measuredWidth="276" measuredHeight="56">
+    <widgets xsi:type="model:Group" id="24" width="276" height="56" text="View Consumption by" measuredWidth="276" measuredHeight="56">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Button" id="25" x="96" y="18" text="Gas" measuredWidth="51" measuredHeight="32" state="selected">
+      <font size="14"/>
+    </widgets>
+    <widgets xsi:type="model:Button" id="26" x="161" y="18" text="Electricity" measuredWidth="107" measuredHeight="32" state="selected">
+      <font size="14"/>
+    </widgets>
+    <widgets xsi:type="model:Button" id="27" x="10" y="18" text="Water" measuredWidth="72" measuredHeight="32">
+      <font size="14"/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:Image" id="28" x="403" y="370" width="405" height="238" measuredWidth="405" measuredHeight="238" src="prediction_image.png"/>
+  <widgets xsi:type="model:WidgetGroup" id="32" x="614" y="97" measuredWidth="192" measuredHeight="217">
+    <widgets xsi:type="model:Chart" id="29" y="23" width="192" height="194" measuredWidth="192" measuredHeight="194"/>
+    <widgets xsi:type="model:Label" id="30" x="107" y="107" width="69" text="Electricity" measuredWidth="69" measuredHeight="25">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="31" x="30" y="100" width="28" text="Gas" measuredWidth="28" measuredHeight="25">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Label" id="33" x="38" width="111" text="Cost Breakdown" measuredWidth="111" measuredHeight="25">
+      <font/>
+    </widgets>
+  </widgets>
+  <widgets xsi:type="model:WidgetGroup" id="34" x="532" y="313" measuredWidth="276" measuredHeight="56">
+    <widgets xsi:type="model:Group" id="35" width="276" height="56" text="View Cost by" measuredWidth="276" measuredHeight="56">
+      <font/>
+    </widgets>
+    <widgets xsi:type="model:Button" id="36" x="96" y="18" text="Gas" measuredWidth="51" measuredHeight="32" state="selected">
+      <font size="14"/>
+    </widgets>
+    <widgets xsi:type="model:Button" id="37" x="161" y="18" text="Electricity" measuredWidth="107" measuredHeight="32" state="selected">
+      <font size="14"/>
+    </widgets>
+    <widgets xsi:type="model:Button" id="38" x="10" y="18" text="Water" measuredWidth="72" measuredHeight="32">
+      <font size="14"/>
+    </widgets>
   </widgets>
   <hRuler/>
   <vRuler/>
